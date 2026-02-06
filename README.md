@@ -62,5 +62,5 @@ A `Map` is a collection of keyed data items, similar to an `Object`. However, Ma
 Check out the deep-dive examples here:
 *   [Set Examples](./set/set.js)
 *   [Map Examples](./map/map.js)
-*   [Top 10 Map & Set Problems](./top-10-map-set-dsa-questions/question1.js)
+*   [Top 10 Map & Set Problems](./top-10-map-set-dsa-questions/Readme.md)
 
