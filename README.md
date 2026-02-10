@@ -91,6 +91,8 @@ O(n²) / O(n³) → O(n)
 
 > Can you maintain state while moving pointers?
 
+[Want to learn in details? Click here](./sliding-window/README.md)
+
 ---
 
 ## 5. Two Pointers Pattern
@@ -112,6 +114,8 @@ Tests:
 🧠 **What they check**
 
 > Can you avoid extra memory and think directionally?
+[Want to learn in details? Click here](./two-pointer/README.md)
+
 
 ---
 
