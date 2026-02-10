@@ -1,4 +1,4 @@
-# 🚀 Topics to Master in Sequence (Sets & Maps to Advanced Patterns)
+#  Topics to Master in Sequence (Sets & Maps to Advanced Patterns)
 
 ## 1. Sets (Unique Collections)
 
@@ -58,10 +58,10 @@ A `Map` is a collection of keyed data items, similar to an `Object`. However, Ma
 
 After Map/Set, interviewers test **4 BIG abilities**:
 
-1️⃣ Can you **reduce time complexity**?
-2️⃣ Can you **reduce space complexity**?
-3️⃣ Can you **handle large input efficiently**?
-4️⃣ Can you **think in patterns, not brute force**?
+1 Can you **reduce time complexity**?
+2 Can you **reduce space complexity**?
+3 Can you **handle large input efficiently**?
+4 Can you **think in patterns, not brute force**?
 
 ---
 
@@ -78,7 +78,7 @@ They want to see if you can:
 ### Replaces:
 
 ```
-O(n²) / O(n³) → O(n)
+O(n²) / O(n³)  O(n)
 ```
 
 ### Example Problems:
@@ -87,7 +87,7 @@ O(n²) / O(n³) → O(n)
 * Max sum subarray of size K
 * Minimum window substring
 
-🧠 **What they check**
+ **What they check**
 
 > Can you maintain state while moving pointers?
 
@@ -111,7 +111,7 @@ Tests:
 * Remove duplicates from sorted array
 * Container with most water
 
-🧠 **What they check**
+ **What they check**
 
 > Can you avoid extra memory and think directionally?
 [Want to learn in details? Click here](./two-pointer/README.md)
@@ -134,7 +134,7 @@ Tests:
 * Range sum queries
 * Count of subarrays with given sum
 
-🧠 **What they check**
+ **What they check**
 
 > Can you convert range problems into constant-time lookups?
 
@@ -155,7 +155,7 @@ They test:
 * Search in rotated array
 * Binary search on answer (very important!)
 
-🧠 **What they check**
+ **What they check**
 
 > Can you think beyond linear scan?
 
@@ -176,7 +176,7 @@ Tests:
 * Jump game
 * Minimum coins
 
-🧠 **What they check**
+ **What they check**
 
 > Can you choose the best local decision that leads to global optimum?
 
@@ -197,7 +197,7 @@ Tests:
 * Kth largest element
 * Merge K sorted lists
 
-🧠 **What they check**
+ **What they check**
 
 > Can you manage partially sorted data efficiently?
 
@@ -218,13 +218,13 @@ Tests:
 * Permutations
 * Combination sum
 
-🧠 **What they check**
+ **What they check**
 
 > Can you explore possibilities without losing state?
 
 ---
 
-## 11. Dynamic Programming (Final Boss 🧠🔥)
+## 11. Dynamic Programming (Final Boss )
 
 ### Why asked
 
@@ -239,13 +239,13 @@ Tests:
 * House robber
 * Longest common subsequence
 
-🧠 **What they check**
+ **What they check**
 
 > Can you reuse previous computation?
 
 ---
 
-# 🧠 INTERVIEWER MINDSET (VERY IMPORTANT)
+#  INTERVIEWER MINDSET (VERY IMPORTANT)
 
 When they ask a question, they secretly expect:
 
@@ -256,29 +256,29 @@ When they ask a question, they secretly expect:
 | Step 3 | Optimize using pattern |
 | Step 4 | Explain time/space     |
 
-💡 **This is EXACTLY why Map/Set questions are asked.**
+ **This is EXACTLY why Map/Set questions are asked.**
 
 ---
 
-# 🔥 GOLDEN INTERVIEW LINE (Memorize)
+#  GOLDEN INTERVIEW LINE (Memorize)
 
 > "I’ll first explain the brute-force solution, then optimize it using an appropriate pattern to reduce time complexity."
 
 ---
 
-# 🎯 What You Should Learn NEXT (Action Plan)
+#  What You Should Learn NEXT (Action Plan)
 
 ### Week-style roadmap:
 
-1️⃣ Sliding Window + Two Pointers
-2️⃣ Prefix Sum + Map
-3️⃣ Binary Search (all variants)
-4️⃣ Heap + Greedy
-5️⃣ Recursion → DP
+1 Sliding Window + Two Pointers
+2 Prefix Sum + Map
+3 Binary Search (all variants)
+4 Heap + Greedy
+5 Recursion  DP
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 Check out the deep-dive examples here:
 *   [Set Examples](./set/set.js)
 *   [Map Examples](./map/map.js)
@@ -286,26 +286,16 @@ Check out the deep-dive examples here:
 
 ---
 
-You’re **thinking in the EXACT right direction** 👍
+You’re **thinking in the EXACT right direction** 
 What you’ve realized is **the core truth of interviews**:
 
 > **Interviewers don’t care about syntax.
 > They want to see whether you can RECOGNIZE a pattern and OPTIMIZE it.**
 
-You’ve mastered **Set / Map → hash-based optimization**.
+You’ve mastered **Set / Map  hash-based optimization**.
 Now I’ll tell you **what comes NEXT**, and **WHY interviewers ask it**.
 
 ---
 
-## 🚀 NEXT?
 
-I strongly suggest next:
-👉 **Sliding Window Pattern (from brute force → optimized)**
-
-Say **SLIDING WINDOW** and we’ll deep-dive with:
-
-* Diagrams
-* Interview questions
-* Mistakes to avoid
-* Exact words to say in interview
 

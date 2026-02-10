@@ -1,5 +1,5 @@
-🔥 **Top 10 Set / Map Interview Problems (DSA)**
-🔥 **Brute Force → Optimized using Map / Set**
+ **Top 10 Set / Map Interview Problems (DSA)**
+ **Brute Force  Optimized using Map / Set**
 
 This is **exactly what interviewers test**:
 
@@ -7,15 +7,15 @@ This is **exactly what interviewers test**:
 
 I’ll show:
 
-* ❌ Brute-force approach
-* ✅ Optimized Map/Set approach
-* 🧠 Interview talking point
+*  Brute-force approach
+*  Optimized Map/Set approach
+*  Interview talking point
 
 ---
 
-## 🥇 1. Two Sum (MOST ASKED)
+##  1. Two Sum (MOST ASKED)
 
-### ❌ Brute Force — O(n²)
+###  Brute Force — O(n²)
 
 ```js
 for (let i = 0; i < nums.length; i++) {
@@ -25,7 +25,7 @@ for (let i = 0; i < nums.length; i++) {
 }
 ```
 
-### ✅ Optimized using Map — O(n)
+###  Optimized using Map — O(n)
 
 ```js
 const map = new Map();
@@ -37,15 +37,15 @@ for (let i = 0; i < nums.length; i++) {
 }
 ```
 
-🧠 **Interview line**
+ **Interview line**
 
 > “Map avoids nested loops by storing visited elements.”
 
 ---
 
-## 🥈 2. Find Duplicate Number
+##  2. Find Duplicate Number
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 for (let i = 0; i < arr.length; i++) {
@@ -55,7 +55,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-### ✅ Optimized using Set
+###  Optimized using Set
 
 ```js
 const set = new Set();
@@ -68,9 +68,9 @@ for (let num of arr) {
 
 ---
 
-## 🥉 3. First Non-Repeating Character
+##  3. First Non-Repeating Character
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 for (let i = 0; i < s.length; i++) {
@@ -78,7 +78,7 @@ for (let i = 0; i < s.length; i++) {
 }
 ```
 
-### ✅ Optimized using Map
+###  Optimized using Map
 
 ```js
 const map = new Map();
@@ -89,11 +89,11 @@ for (let ch of s) if (map.get(ch) === 1) return ch;
 
 ---
 
-## 4️⃣ Longest Substring Without Repeating Characters
+## 4 Longest Substring Without Repeating Characters
 
-### ❌ Brute Force — O(n³)
+###  Brute Force — O(n³)
 
-### ✅ Optimized using Set (Sliding Window)
+###  Optimized using Set (Sliding Window)
 
 ```js
 let set = new Set();
@@ -110,15 +110,15 @@ for (let right = 0; right < s.length; right++) {
 
 ---
 
-## 5️⃣ Check Anagram
+## 5 Check Anagram
 
-### ❌ Brute Force (Sort)
+###  Brute Force (Sort)
 
 ```js
 s.split('').sort().join('') === t.split('').sort().join('');
 ```
 
-### ✅ Optimized using Map
+###  Optimized using Map
 
 ```js
 const map = new Map();
@@ -132,9 +132,9 @@ for (let ch of t) {
 
 ---
 
-## 6️⃣ Intersection of Two Arrays
+## 6 Intersection of Two Arrays
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 let res = [];
@@ -143,7 +143,7 @@ for (let i of a)
     if (i === j) res.push(i);
 ```
 
-### ✅ Optimized using Set
+###  Optimized using Set
 
 ```js
 const set = new Set(a);
@@ -152,11 +152,11 @@ const res = b.filter(x => set.has(x));
 
 ---
 
-## 7️⃣ Subarray Sum Equals K
+## 7 Subarray Sum Equals K
 
-### ❌ Brute Force — O(n²)
+###  Brute Force — O(n²)
 
-### ✅ Optimized using Map (Prefix Sum)
+###  Optimized using Map (Prefix Sum)
 
 ```js
 const map = new Map();
@@ -171,20 +171,20 @@ for (let num of nums) {
 }
 ```
 
-🧠 **Interview favorite** ⭐
+ **Interview favorite** 
 
 ---
 
-## 8️⃣ Majority Element
+## 8 Majority Element
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 let count = {};
 for (let num of nums) count[num] = (count[num] || 0) + 1;
 ```
 
-### ✅ Optimized using Map
+###  Optimized using Map
 
 ```js
 const map = new Map();
@@ -197,9 +197,9 @@ for (let num of nums) {
 
 ---
 
-## 9️⃣ Find All Unique Pairs with Given Sum
+## 9 Find All Unique Pairs with Given Sum
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 for (let i = 0; i < arr.length; i++)
@@ -207,7 +207,7 @@ for (let i = 0; i < arr.length; i++)
     if (arr[i] + arr[j] === k) console.log(arr[i], arr[j]);
 ```
 
-### ✅ Optimized using Set
+###  Optimized using Set
 
 ```js
 const set = new Set();
@@ -220,15 +220,15 @@ for (let num of arr) {
 
 ---
 
-## 🔟 Group Anagrams
+##  Group Anagrams
 
-### ❌ Brute Force
+###  Brute Force
 
 ```js
 // Compare each word with others
 ```
 
-### ✅ Optimized using Map
+###  Optimized using Map
 
 ```js
 const map = new Map();
@@ -242,7 +242,7 @@ for (let word of words) {
 
 ---
 
-# 🧠 PATTERN RECOGNITION (VERY IMPORTANT)
+#  PATTERN RECOGNITION (VERY IMPORTANT)
 
 | Problem Type       | Use       |
 | ------------------ | --------- |
@@ -255,18 +255,18 @@ for (let word of words) {
 
 ---
 
-## 🔥 Interview Cheat Line (Say This Confidently)
+##  Interview Cheat Line (Say This Confidently)
 
 > “Whenever I see nested loops for lookup or frequency, I try to replace them with Map or Set to reduce time complexity from O(n²) to O(n).”
 
 ---
 
-## 🔥 What Should We Do Next?
+##  What Should We Do Next?
 
 I strongly recommend next:
-1️⃣ **Sliding Window using Map (deep dive)**
-2️⃣ **LRU Cache implementation using Map**
-3️⃣ **Prefix sum + HashMap patterns**
-4️⃣ **Map vs Object vs Redis (system design)**
+1 **Sliding Window using Map (deep dive)**
+2 **LRU Cache implementation using Map**
+3 **Prefix sum + HashMap patterns**
+4 **Map vs Object vs Redis (system design)**
 
 

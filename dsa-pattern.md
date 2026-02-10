@@ -1,30 +1,30 @@
 
 
-# 🧠 MASTER DSA PATTERN MAP (ENGINEER-LEVEL)
+#  MASTER DSA PATTERN MAP (ENGINEER-LEVEL)
 
 Think of DSA as **10–12 families**, not 1000 problems.
 
 ---
 
-## 🔴 PATTERN 1 — ARRAY / STRING SCAN (FOUNDATION)
+##  PATTERN 1 — ARRAY / STRING SCAN (FOUNDATION)
 
-### 🔍 How to identify
+###  How to identify
 
 * Input is array or string
 * Single pass or simple loops
 * No complex constraints
 
-### 🧠 Core idea
+###  Core idea
 
 > Iterate + track state
 
-### 🛠 Common tools
+###  Common tools
 
 * Loops
 * Counters
 * Basic conditionals
 
-### ✅ Canonical problems (DO ONLY THESE)
+###  Canonical problems (DO ONLY THESE)
 
 1. Reverse a string / array
 2. Find max / min / sum
@@ -32,28 +32,28 @@ Think of DSA as **10–12 families**, not 1000 problems.
 4. Check palindrome
 5. Count frequency of characters
 
-📌 **Why this matters**
+ **Why this matters**
 Everything else builds on this.
 
 ---
 
 ## 🟠 PATTERN 2 — HASHMAP / SET (LOOKUP & COUNTING)
 
-### 🔍 How to identify
+###  How to identify
 
 * “Count”, “frequency”, “exists”, “first non-repeating”
 * Need fast lookup
 
-### 🧠 Core idea
+###  Core idea
 
 > Trade memory for speed
 
-### 🛠 Common tools
+###  Common tools
 
 * `Map`, `Set`
 * Object hash
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Two Sum
 2. First non-repeating character
@@ -61,7 +61,7 @@ Everything else builds on this.
 4. Remove duplicates using Set
 5. Group anagrams
 
-📌 **Interview signal**
+ **Interview signal**
 
 > If you don’t think of HashMap here, interviewer notices.
 
@@ -69,20 +69,20 @@ Everything else builds on this.
 
 ## 🟡 PATTERN 3 — TWO POINTERS
 
-### 🔍 How to identify
+###  How to identify
 
 * Sorted array / string
 * “Pair”, “triplet”, “move inward”
 
-### 🧠 Core idea
+###  Core idea
 
 > Shrink search space intelligently
 
-### 🛠 Common tools
+###  Common tools
 
 * `left`, `right` pointers
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Two Sum (sorted array)
 2. Reverse array in-place
@@ -94,22 +94,22 @@ Everything else builds on this.
 
 ## 🟢 PATTERN 4 — SLIDING WINDOW
 
-### 🔍 How to identify
+###  How to identify
 
 * “Subarray”, “substring”
 * Continuous window
-* Optimize from O(n²) → O(n)
+* Optimize from O(n²)  O(n)
 
-### 🧠 Core idea
+###  Core idea
 
 > Expand + shrink window
 
-### 🛠 Common tools
+###  Common tools
 
 * Set / Map
 * Left & right pointers
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Longest substring without repeating
 2. Max sum subarray of size K
@@ -117,26 +117,26 @@ Everything else builds on this.
 4. Longest repeating character replacement
 5. Count subarrays with sum K
 
-📌 Your **DSA question preparation** already touched this.
+ Your **DSA question preparation** already touched this.
 
 ---
 
-## 🔵 PATTERN 5 — STACK (NESTING & ORDER)
+##  PATTERN 5 — STACK (NESTING & ORDER)
 
-### 🔍 How to identify
+###  How to identify
 
 * “Balanced”, “nested”, “previous/next”
 * LIFO behavior
 
-### 🧠 Core idea
+###  Core idea
 
 > Last in, first out
 
-### 🛠 Common tools
+###  Common tools
 
 * Stack array
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Valid parentheses
 2. Next greater element
@@ -148,21 +148,21 @@ Everything else builds on this.
 
 ## 🟣 PATTERN 6 — RECURSION BASICS
 
-### 🔍 How to identify
+###  How to identify
 
 * Problem breaks into smaller same problem
 * Tree-like logic
 
-### 🧠 Core idea
+###  Core idea
 
 > Solve + trust recursion
 
-### 🛠 Common tools
+###  Common tools
 
 * Recursive calls
 * Base case
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Factorial
 2. Fibonacci
@@ -174,22 +174,22 @@ Everything else builds on this.
 
 ## 🟤 PATTERN 7 — GRID / MATRIX DFS-BFS (VERY IMPORTANT)
 
-### 🔍 How to identify
+###  How to identify
 
 * 2D grid
 * Move in directions
 * Boundaries involved
 
-### 🧠 Core idea
+###  Core idea
 
 > Explore neighbors safely
 
-### 🛠 Common tools
+###  Common tools
 
 * DFS / BFS
 * Visited matrix
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Number of islands
 2. Flood fill
@@ -197,57 +197,57 @@ Everything else builds on this.
 4. Shortest path in grid
 5. Rotting oranges
 
-📌 This is where your **word search problem lives** (advanced form).
+ This is where your **word search problem lives** (advanced form).
 
 ---
 
-## ⚫ PATTERN 8 — BACKTRACKING (TRY / UNDO)
+##  PATTERN 8 — BACKTRACKING (TRY / UNDO)
 
-### 🔍 How to identify
+###  How to identify
 
 * “Try all possibilities”
 * “Each element used once”
 * Constraints + choices
 
-### 🧠 Core idea
+###  Core idea
 
-> Try → fail → undo → try next
+> Try  fail  undo  try next
 
-### 🛠 Common tools
+###  Common tools
 
 * DFS
 * `visited`
 * Backtracking
 
-### ✅ Canonical problems
+###  Canonical problems
 
-1. Word search (your problem ✅)
+1. Word search (your problem )
 2. Generate permutations
 3. Generate subsets
 4. Sudoku solver
 5. N-Queens
 
-📌 **Key learning**
+ **Key learning**
 Backtracking is DFS + undo.
 
 ---
 
 ## 🟧 PATTERN 9 — BINARY SEARCH
 
-### 🔍 How to identify
+###  How to identify
 
 * Sorted input
 * “Find first/last”, “minimum”, “maximum”
 
-### 🧠 Core idea
+###  Core idea
 
 > Divide search space
 
-### 🛠 Common tools
+###  Common tools
 
 * `low`, `high`, `mid`
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Binary search
 2. First & last position
@@ -259,21 +259,21 @@ Backtracking is DFS + undo.
 
 ## 🟥 PATTERN 10 — GREEDY (LOCAL OPTIMAL)
 
-### 🔍 How to identify
+###  How to identify
 
 * Choose best at each step
 * No backtracking
 
-### 🧠 Core idea
+###  Core idea
 
-> Local optimal → global optimal
+> Local optimal  global optimal
 
-### 🛠 Common tools
+###  Common tools
 
 * Sorting
 * Simple decisions
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Activity selection
 2. Minimum coins
@@ -285,20 +285,20 @@ Backtracking is DFS + undo.
 
 ## 🟦 PATTERN 11 — HEAP / PRIORITY QUEUE
 
-### 🔍 How to identify
+###  How to identify
 
 * “Top K”
 * “Minimum / maximum frequently”
 
-### 🧠 Core idea
+###  Core idea
 
 > Maintain best candidates
 
-### 🛠 Common tools
+###  Common tools
 
 * Min-heap / Max-heap
 
-### ✅ Canonical problems
+###  Canonical problems
 
 1. Kth largest element
 2. Top K frequent elements
@@ -308,7 +308,7 @@ Backtracking is DFS + undo.
 
 ---
 
-## 🧩 WHERE YOUR QUESTION FITS (FINAL CONNECTION)
+##  WHERE YOUR QUESTION FITS (FINAL CONNECTION)
 
 Your interview problem:
 
@@ -318,19 +318,19 @@ Maps to:
 
 ```
 Grid / Matrix
-→ DFS
-→ Backtracking
-→ Constraint variation
+ DFS
+ Backtracking
+ Constraint variation
 ```
 
 That’s **Pattern 7 + Pattern 8 combined**.
 
 ---
 
-# 🎯 HOW TO USE THIS ROADMAP (IMPORTANT)
+#  HOW TO USE THIS ROADMAP (IMPORTANT)
 
-❌ Don’t solve 100 problems
-✅ Solve **5 per pattern**
+ Don’t solve 100 problems
+ Solve **5 per pattern**
 
 That’s:
 
@@ -339,7 +339,7 @@ That’s:
 
 ---
 
-## 🧠 INTERVIEW SUPERPOWER (MEMORIZE THIS)
+##  INTERVIEW SUPERPOWER (MEMORIZE THIS)
 
 Before coding, say:
 

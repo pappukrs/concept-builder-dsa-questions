@@ -1,63 +1,63 @@
-Perfect use-case 👍
+Perfect use-case 
 Below is a **clean, polished, README-ready version** that is:
 
-* ✅ **Beginner friendly**
-* ✅ **Interview focused**
-* ✅ **Pattern-driven (so most problems become solvable)**
-* ✅ **Timeless for revision after months**
-* ✅ **Readable for anyone new to Sliding Window**
+*  **Beginner friendly**
+*  **Interview focused**
+*  **Pattern-driven (so most problems become solvable)**
+*  **Timeless for revision after months**
+*  **Readable for anyone new to Sliding Window**
 
 You can **copy-paste this directly into `README.md`**.
 
 ---
 
-# 🪟 Sliding Window Technique — Complete Guide (Interview Ready)
+#  Sliding Window Technique — Complete Guide (Interview Ready)
 
 Sliding Window is one of the **most important DSA patterns**.
 If you truly understand this pattern, you can solve **70–80% of subarray / substring problems** efficiently.
 
 ---
 
-## 🧠 What is Sliding Window? (Core Idea)
+##  What is Sliding Window? (Core Idea)
 
 Sliding Window is used when:
 
-* ✅ You are working with a **contiguous subarray or substring**
-* ✅ You want to optimize a **brute-force O(n²)** solution to **O(n)**
-* ✅ The window moves forward by **adding elements on the right** and **removing elements from the left**
+*  You are working with a **contiguous subarray or substring**
+*  You want to optimize a **brute-force O(n²)** solution to **O(n)**
+*  The window moves forward by **adding elements on the right** and **removing elements from the left**
 
 ---
 
-## ❌ Brute Force Thinking (Avoid This)
+##  Brute Force Thinking (Avoid This)
 
 > “Check every possible subarray”
 
 ```text
 [1,2,3,4]
-→ [1], [1,2], [1,2,3], ...
+ [1], [1,2], [1,2,3], ...
 ```
 
 * Time Complexity: **O(n²)**
-* ❌ Too slow for interviews
+*  Too slow for interviews
 
 ---
 
-## ✅ Sliding Window Thinking (Correct Way)
+##  Sliding Window Thinking (Correct Way)
 
 > “Reuse previous computation instead of recalculating”
 
 ```text
-Move window → add right element → remove left element
+Move window  add right element  remove left element
 ```
 
 * Time Complexity: **O(n)**
-* ✅ Interview-approved approach
+*  Interview-approved approach
 
 ---
 
-# 🪟 Two Types of Sliding Window (VERY IMPORTANT)
+#  Two Types of Sliding Window (VERY IMPORTANT)
 
-## 1️⃣ Fixed Size Sliding Window
+## 1 Fixed Size Sliding Window
 
 * Window size **K is constant**
 * Window always contains **exactly K elements**
@@ -70,7 +70,7 @@ Move window → add right element → remove left element
 
 ---
 
-## 2️⃣ Variable Size Sliding Window (Most Important for Interviews)
+## 2 Variable Size Sliding Window (Most Important for Interviews)
 
 * Window **expands and shrinks dynamically**
 * Controlled by a **condition**
@@ -78,12 +78,12 @@ Move window → add right element → remove left element
 ### Typical Problems
 
 * Longest substring without repeating characters
-* Smallest subarray with sum ≥ K
+* Smallest subarray with sum  K
 * Minimum window substring
 
 ---
 
-# 🔹 TYPE 1: Fixed Size Sliding Window
+#  TYPE 1: Fixed Size Sliding Window
 
 ## Problem: Maximum Sum Subarray of Size K
 
@@ -92,19 +92,19 @@ Move window → add right element → remove left element
 ```js
 arr = [2,1,5,1,3,2]
 k = 3
-Output → 9   // [5,1,3]
+Output  9   // [5,1,3]
 ```
 
 ---
 
-### ❌ Brute Force
+###  Brute Force
 
 * Try all subarrays
-* **O(n²)** → TLE
+* **O(n²)**  TLE
 
 ---
 
-### ✅ Sliding Window Solution (JavaScript)
+###  Sliding Window Solution (JavaScript)
 
 ```js
 function maxSubArraySum(arr, k) {
@@ -124,15 +124,15 @@ function maxSubArraySum(arr, k) {
 }
 ```
 
-### 🧠 Fixed Window Mental Model
+###  Fixed Window Mental Model
 
 ```
-add → check → remove → slide
+add  check  remove  slide
 ```
 
 ---
 
-# 🔹 TYPE 2: Variable Size Sliding Window (INTERVIEW GOLD 🥇)
+#  TYPE 2: Variable Size Sliding Window (INTERVIEW GOLD )
 
 ## Problem: Longest Substring Without Repeating Characters
 
@@ -140,12 +140,12 @@ add → check → remove → slide
 
 ```js
 s = "abcabcbb"
-Output → 3   // "abc"
+Output  3   // "abc"
 ```
 
 ---
 
-### 🧠 Key Idea
+###  Key Idea
 
 * Use a **Set**
 * Expand window when valid
@@ -153,7 +153,7 @@ Output → 3   // "abc"
 
 ---
 
-### ✅ Sliding Window Solution (JavaScript)
+###  Sliding Window Solution (JavaScript)
 
 ```js
 function longestSubstring(s) {
@@ -175,28 +175,28 @@ function longestSubstring(s) {
 }
 ```
 
-### 🧠 Variable Window Mental Model
+###  Variable Window Mental Model
 
 ```
 expand right
-if invalid → shrink left
+if invalid  shrink left
 ```
 
 ---
 
-## Problem: Smallest Subarray With Sum ≥ K
+## Problem: Smallest Subarray With Sum  K
 
 ### Example
 
 ```js
 arr = [2,3,1,2,4,3]
 k = 7
-Output → 2   // [4,3]
+Output  2   // [4,3]
 ```
 
 ---
 
-### ✅ Sliding Window Solution
+###  Sliding Window Solution
 
 ```js
 function minSubArrayLen(arr, k) {
@@ -220,7 +220,7 @@ function minSubArrayLen(arr, k) {
 
 ---
 
-# 🧠 Pattern Recognition Cheat Sheet (MEMORIZE THIS)
+#  Pattern Recognition Cheat Sheet (MEMORIZE THIS)
 
 | If the question mentions | Use             |
 | ------------------------ | --------------- |
@@ -232,7 +232,7 @@ function minSubArrayLen(arr, k) {
 
 ---
 
-# 🔟 Top 10 Sliding Window Questions (Most Asked)
+#  Top 10 Sliding Window Questions (Most Asked)
 
 ## 🟦 Fixed Window
 
@@ -247,14 +247,14 @@ function minSubArrayLen(arr, k) {
 4. Longest substring without repeating characters
 5. Longest substring with at most K distinct characters
 6. Minimum window substring
-7. Smallest subarray with sum ≥ K
+7. Smallest subarray with sum  K
 8. Longest ones after replacing at most K zeros
 9. Fruits into baskets
-10. Count subarrays with sum ≤ K
+10. Count subarrays with sum  K
 
 ---
 
-# 🧩 Pattern → Question Mapping
+#  Pattern  Question Mapping
 
 | Question Type  | Pattern  | Tool          |
 | -------------- | -------- | ------------- |
@@ -268,27 +268,27 @@ function minSubArrayLen(arr, k) {
 
 ---
 
-# 🧠 Master Mnemonics (VERY IMPORTANT)
+#  Master Mnemonics (VERY IMPORTANT)
 
-## 🎯 CLSW Rule
+##  CLSW Rule
 
 > **C**ontiguous
 > **L**ongest / shortest
 > **S**um / distinct
 > **W**indow
 
-If all apply → **Sliding Window**
+If all apply  **Sliding Window**
 
 ---
 
-## 🎯 Shrink Rule
+##  Shrink Rule
 
-> ❌ condition breaks → move LEFT
-> ✅ condition valid → move RIGHT
+>  condition breaks  move LEFT
+>  condition valid  move RIGHT
 
 ---
 
-# 🧠 Universal Variable Window Template
+#  Universal Variable Window Template
 
 ```js
 let left = 0;
@@ -309,25 +309,25 @@ for (let right = 0; right < arr.length; right++) {
 
 ---
 
-# 🎤 Interview Explanation (Perfect Answer)
+#  Interview Explanation (Perfect Answer)
 
 > “This is a contiguous subarray problem, so sliding window applies.
 > I expand the window using the right pointer and shrink it from the left when the condition breaks, reducing time complexity from O(n²) to O(n).”
 
-🔥 Interviewers **love** this explanation.
+ Interviewers **love** this explanation.
 
 ---
 
-## 🚀 Next Topics to Learn
+##  Next Topics to Learn
 
 * Sliding Window + HashMap (hard problems)
-* Brute force → Sliding Window conversion
+* Brute force  Sliding Window conversion
 * Sliding Window in system design (rate limiter, logs)
 * Edge cases & interview traps
 
 ---
 
-### ✅ If someone understands **this README**,
+###  If someone understands **this README**,
 
 they can solve **most Sliding Window problems confidently**.
 

@@ -3,11 +3,11 @@
 If Sliding Window = **moving a window**,
 Two Pointers = **moving two independent references smartly**.
 
-I’ll teach this in **mental model → patterns → JS DSA questions → interview framing**.
+I’ll teach this in **mental model  patterns  JS DSA questions  interview framing**.
 
 ---
 
-# 🧠 What is Two Pointer Technique?
+#  What is Two Pointer Technique?
 
 Two Pointers means:
 
@@ -16,14 +16,14 @@ Two Pointers means:
 Usually optimizes:
 
 ```
-O(n²) → O(n)
+O(n²)  O(n)
 ```
 
 ---
 
-# 🔑 When Should You Think of Two Pointers?
+#  When Should You Think of Two Pointers?
 
-Look for keywords 👇
+Look for keywords 
 
 | Clue                      | Think        |
 | ------------------------- | ------------ |
@@ -35,12 +35,12 @@ Look for keywords 👇
 
 ---
 
-# 🧭 Types of Two Pointer Patterns (VERY IMPORTANT)
+#  Types of Two Pointer Patterns (VERY IMPORTANT)
 
-## 1️⃣ Opposite Direction Pointers
+## 1 Opposite Direction Pointers
 
 ```
-left →     ← right
+left       right
 ```
 
 Used for:
@@ -51,10 +51,10 @@ Used for:
 
 ---
 
-## 2️⃣ Same Direction Pointers (Fast & Slow)
+## 2 Same Direction Pointers (Fast & Slow)
 
 ```
-slow → fast →
+slow  fast 
 ```
 
 Used for:
@@ -65,11 +65,11 @@ Used for:
 
 ---
 
-## 3️⃣ Merge Pattern
+## 3 Merge Pattern
 
 ```
-i →  (array1)
-j →  (array2)
+i   (array1)
+j   (array2)
 ```
 
 Used for:
@@ -79,20 +79,20 @@ Used for:
 
 ---
 
-# 🔹 PATTERN 1: Opposite Direction (Most Classic)
+#  PATTERN 1: Opposite Direction (Most Classic)
 
-## ❓ Question 1: Check Palindrome
+##  Question 1: Check Palindrome
 
 ### Example
 
 ```js
-s = "madam" → true
-s = "hello" → false
+s = "madam"  true
+s = "hello"  false
 ```
 
 ---
 
-### ✅ JS Solution
+###  JS Solution
 
 ```js
 function isPalindrome(s) {
@@ -109,27 +109,27 @@ function isPalindrome(s) {
 }
 ```
 
-### 🧠 Mental Model
+###  Mental Model
 
 ```
-compare → move inward
+compare  move inward
 ```
 
 ---
 
-## ❓ Question 2: Two Sum (Sorted Array)
+##  Question 2: Two Sum (Sorted Array)
 
 ### Example
 
 ```js
 nums = [1,2,3,4,6]
 target = 6
-Output → [1,3] (indexes)
+Output  [1,3] (indexes)
 ```
 
 ---
 
-### ✅ JS Solution
+###  JS Solution
 
 ```js
 function twoSumSorted(nums, target) {
@@ -148,28 +148,28 @@ function twoSumSorted(nums, target) {
 }
 ```
 
-### 🧠 Why it works
+###  Why it works
 
 * Array is **sorted**
-* Increase sum → move left
-* Decrease sum → move right
+* Increase sum  move left
+* Decrease sum  move right
 
 ---
 
-# 🔹 PATTERN 2: Same Direction (Fast & Slow)
+#  PATTERN 2: Same Direction (Fast & Slow)
 
-## ❓ Question 3: Remove Duplicates (Sorted Array)
+##  Question 3: Remove Duplicates (Sorted Array)
 
 ### Example
 
 ```js
 nums = [1,1,2,2,3]
-Output → [1,2,3]
+Output  [1,2,3]
 ```
 
 ---
 
-### ✅ JS Solution
+###  JS Solution
 
 ```js
 function removeDuplicates(nums) {
@@ -186,7 +186,7 @@ function removeDuplicates(nums) {
 }
 ```
 
-### 🧠 Mental Model
+###  Mental Model
 
 ```
 fast explores
@@ -195,18 +195,18 @@ slow builds result
 
 ---
 
-## ❓ Question 4: Move Zeros to End
+##  Question 4: Move Zeros to End
 
 ### Example
 
 ```js
 nums = [0,1,0,3,12]
-Output → [1,3,12,0,0]
+Output  [1,3,12,0,0]
 ```
 
 ---
 
-### ✅ JS Solution
+###  JS Solution
 
 ```js
 function moveZeroes(nums) {
@@ -225,9 +225,9 @@ function moveZeroes(nums) {
 
 ---
 
-# 🔹 PATTERN 3: Merge Pattern
+#  PATTERN 3: Merge Pattern
 
-## ❓ Question 5: Merge Two Sorted Arrays
+##  Question 5: Merge Two Sorted Arrays
 
 ### Example
 
@@ -238,7 +238,7 @@ b = [2,4,6]
 
 ---
 
-### ✅ JS Solution
+###  JS Solution
 
 ```js
 function mergeSorted(a, b) {
@@ -256,7 +256,7 @@ function mergeSorted(a, b) {
 
 ---
 
-# 🧠 Two Pointer vs Sliding Window (VERY COMMON CONFUSION)
+#  Two Pointer vs Sliding Window (VERY COMMON CONFUSION)
 
 | Sliding Window    | Two Pointer             |
 | ----------------- | ----------------------- |
@@ -265,24 +265,24 @@ function mergeSorted(a, b) {
 | sum / count       | comparison / matching   |
 | add + remove      | move pointers logically |
 
-⚠️ **Sliding Window is actually a specialized form of Two Pointers**
+ **Sliding Window is actually a specialized form of Two Pointers**
 
 ---
 
-# 🎯 Interview Explanation Template
+#  Interview Explanation Template
 
-Use this 👇 verbatim:
+Use this  verbatim:
 
 > “Since the array is sorted, I can use two pointers from both ends.
 > I move the pointers based on whether the current sum is greater or smaller than the target, achieving O(n) time.”
 
-🔥 This shows **problem recognition skill**.
+ This shows **problem recognition skill**.
 
 ---
 
-# 🚀 MUST-DO Two Pointer Interview Questions
+#  MUST-DO Two Pointer Interview Questions
 
-### Easy → Medium
+### Easy  Medium
 
 1. Reverse string
 2. Valid palindrome
@@ -290,7 +290,7 @@ Use this 👇 verbatim:
 4. Move zeros
 5. Remove duplicates
 
-### Medium → Hard
+### Medium  Hard
 
 6. 3Sum
 7. Container with most water
@@ -300,11 +300,11 @@ Use this 👇 verbatim:
 
 ---
 
-# 🔥 Next Logical Steps (Choose One)
+#  Next Logical Steps (Choose One)
 
-1️⃣ **Two Pointer + Sliding Window mixed problems**
-2️⃣ **3Sum & 4Sum deep dive**
-3️⃣ **Fast & Slow pointer (Linked List cycles)**
-4️⃣ **When NOT to use Two Pointers (common traps)**
+1 **Two Pointer + Sliding Window mixed problems**
+2 **3Sum & 4Sum deep dive**
+3 **Fast & Slow pointer (Linked List cycles)**
+4 **When NOT to use Two Pointers (common traps)**
 
-Tell me which one 👉
+Tell me which one 
