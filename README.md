@@ -54,7 +54,7 @@ A `Map` is a collection of keyed data items, similar to an `Object`. However, Ma
 
 ---
 
-## 3. What Interviewers Are REALLY Checking
+##  What Interviewers Are REALLY Checking
 
 After Map/Set, interviewers test **4 BIG abilities**:
 
@@ -65,7 +65,7 @@ After Map/Set, interviewers test **4 BIG abilities**:
 
 ---
 
-## 4. Sliding Window (MOST IMPORTANT NEXT)
+## 3. Sliding Window (MOST IMPORTANT NEXT)
 
 ### Why Interviewers Ask This
 
@@ -95,7 +95,7 @@ O(n²) / O(n³)  O(n)
 
 ---
 
-## 5. Two Pointers Pattern
+## 4. Two Pointers Pattern
 
 ### Why asked
 
@@ -119,7 +119,7 @@ Tests:
 
 ---
 
-## 6. Prefix Sum (Map + Math)
+## 5. Prefix Sum (Map + Math)
 
 ### Why asked
 
@@ -140,7 +140,7 @@ Tests:
 
 ---
 
-## 7. Binary Search (NOT JUST SEARCHING!)
+## 6. Binary Search (NOT JUST SEARCHING!)
 
 ### Why asked
 
@@ -161,7 +161,7 @@ They test:
 
 ---
 
-## 8. Greedy Algorithms
+## 7. Greedy Algorithms
 
 ### Why asked
 
@@ -182,7 +182,7 @@ Tests:
 
 ---
 
-## 9. Heap / Priority Queue
+## 8. Heap / Priority Queue
 
 ### Why asked
 
@@ -203,7 +203,7 @@ Tests:
 
 ---
 
-## 10. Recursion + Backtracking
+## 9. Recursion + Backtracking
 
 ### Why asked
 
@@ -224,7 +224,7 @@ Tests:
 
 ---
 
-## 11. Dynamic Programming (Final Boss )
+## 10. Dynamic Programming (Final Boss )
 
 ### Why asked
 
@@ -244,6 +244,57 @@ Tests:
 > Can you reuse previous computation?
 
 ---
+
+
+## 11. Trees (Binary & BST) 🌳
+
+### What is a Tree?
+A tree is a hierarchical data structure.
+*   **Binary Tree:** Each node has at most 2 children.
+*   **Binary Search Tree (BST):** Left child < Root < Right child.
+
+### �� Core Tree Traversals (MUST MASTER)
+
+#### DFS Traversals
+| Type | Order | Mnemonic |
+| :--- | :--- | :--- |
+| **Preorder** | Root → Left → Right | **PRE** → Root first |
+| **Inorder** | Left → Root → Right | **IN** → Root middle (Sorted for BST) |
+| **Postorder** | Left → Right → Root | **POST** → Root last |
+
+#### BFS Traversal (Level Order)
+*   **Tool:** Uses a **Queue**.
+*   **Behavior:** Output level by level.
+
+### 🧠 Tree Interview Patterns
+*   **Pattern 1: Traversal** (Print tree, Serialize/deserialize)
+*   **Pattern 2: Height / Depth** (Use DFS recursion)
+*   **Pattern 3: Balanced Tree** (Check height difference)
+*   **Pattern 4: Diameter of Tree** (Longest path between any two nodes)
+*   **Pattern 5: BFS Pattern** (Level order, Zigzag traversal, Right/Left view)
+*   **Pattern 6: Binary Search Tree** (Validate BST, Kth smallest, Lowest Common Ancestor)
+
+ **What they check**
+> Can you think recursively and manage complex hierarchical structures?
+
+---
+
+## 12. Sorting Algorithms (Must Know Top 5) 🔢
+
+| Algorithm | Time Complexity (Avg) | Space Complexity | Characteristics |
+| :--- | :--- | :--- | :--- |
+| **Bubble Sort** | O(n²) | O(1) | Compare adjacent; Rarely used practically. |
+| **Selection Sort** | O(n²) | O(1) | Select minimum each pass. |
+| **Insertion Sort** | O(n²) | O(1) | Efficient for nearly sorted data. |
+| **Merge Sort** | O(n log n) | O(n) | Divide & Conquer; Stable; Extra space. |
+| **Quick Sort** | O(n log n) | O(1)* | Divide using pivot; In-place; Most used. |
+
+> [!TIP]
+> **Interview Tip:** You rarely implement bubble or selection. Mastering **Merge Sort** and **Quick Sort** is critical for both implementation and understanding "Divide & Conquer".
+
+ **What they check**
+> Can you evaluate trade-offs between time complexity, space complexity, and stability?
+
 
 #  INTERVIEWER MINDSET (VERY IMPORTANT)
 
